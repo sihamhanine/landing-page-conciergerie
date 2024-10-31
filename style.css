@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/acc.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative; /* Ajouté pour le positionnement */
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between; /* Espace entre logo et menu */
+    align-items: flex-start; /* Aligne le contenu en haut */
+    padding: 0px; /* Ajout d'un padding pour un espacement */
+    background: rgba(0,0,0,.4);
+}
+
+.logo {
+    width: 20%;
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+    height: 30%; /* Maintient le ratio d'aspect */
+}
+
+.menu {
+    width: 60%;
+    margin-top: 40px;
+    margin-right: 300px;
+}
+
+.menu > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+}
+
+.menu li {
+    position: relative; /* Nécessaire pour le sous-menu */
+}
+
+.menu li > a {
+    color: #cab48d; /* Couleur du texte */
+    text-decoration: none;
+    padding: 20px;
+    font-size: 21.8px;
+    font-weight: 600;
+    transition: 0.6s ease;
+    letter-spacing: 2px;
+}
+
+.menu li:hover > a {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
+
+/* debut de page */
+.desc h1, .sec3 h1, .sec4 h1 {
+    padding-top: 20px;
+    font-size: 30px !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 2em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -20px;
+}
+.desc p{
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 30px;
+    color: #666;
+    line-height: 2rem;
+}
+
+.desc button{
+    margin-left: 825px;
+    margin-top: 70px;
+    background:#cab48d;
+    border-radius: 5px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  position: absolute;
+  border: none;
+  }
+  .desc button:hover{
+    background-color: #b59a68;
+  }
+  .desc h2{
+    font-size: 28px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  /* section feature */
+  .sec2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .reactivite, .humain, .qualite, .polyvalence{
+  
+    width: 23%;
+    padding: 10px 30px;
+  }
+  
+  .sec2 p{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 2rem;
+  
+  }
+  .sec2 h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height:2em;
+     font-weight: 500;
+     font-family: 'Montserrat', sans-serif;
+     padding-top: 15px;
+    font-size: 22.75px!important;
+    text-align: center;
+  }
+  .sec2 img{
+    margin-left: 150px;
+  }
+  
+/* section About */
+.about {
+    padding: 40px;
+    margin-top: 50px;
+    background-color: #F8F9F9;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    letter-spacing: 3px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 2rem;
+}
+/* list a puce */
+.timeline {
+    list-style-type: disc; /* Pour les puces rondes */
+    padding-left: 20px; /* Espacement par rapport au bord gauche */
+    color: #666; /* Couleur du texte */
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: left;
+
+}
+
+.timeline li {
+    margin-bottom: 5px; /* Espacement entre chaque élément de la liste */
+    margin-left: 600px;
+    line-height: 2rem;
+}
+
+.timeline li strong {
+    color: #333; /* Couleur spécifique pour les dates */
+    letter-spacing: 1px;
+}
+
+
+/*section foto en bas*/
+.fotobas{
+    background:url('../images/back.jpg');
+    height: 500px;
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 0px;
+  }
+  .gauche{
+    width: 50%;
+  
+    margin-top: 5%;
+  }
+  .gauche h3{
+  font-size: 22px;
+  color: #333;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  .gauche p{
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+  }
+  .droite{
+    width: 50%;
+    background-image: url('../images/tacheadmin.jpg');
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin-top: -50px;
+    border: 1px solid black;
+    margin-right: 30px;
+  }
+
+.copy {
+    background: rgba(0, 0, 0, .7);
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.copy p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #cab48d;
+    text-align: center;
+    word-spacing: 0.1em;
+    padding-top: 20px;
+}
